@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://localhost/krs/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sistem KRS</title>
+    <link href="./Sistem KRS_files/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h3 class="mb-4">Sistem KRS Mahasiswa</h3>
+        
+                
+        <!-- Debug Info -->
+        <div class="alert alert-info">
+            <strong>Debug Info:</strong> Total Mahasiswa di Database: 7        </div>
+
+        <!-- Statistik -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary">
+                    <div class="card-body text-center">
+                        <h4>7</h4>
+                        <p class="mb-0">Mahasiswa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success">
+                    <div class="card-body text-center">
+                        <h4>15</h4>
+                        <p class="mb-0">Mata Kuliah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-body text-center">
+                        <h4>7</h4>
+                        <p class="mb-0">Dosen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Form Daftar Mahasiswa -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Daftar Mahasiswa Baru</h5>
+                        <form method="POST">
+                            <div class="mb-2">
+                                <input type="text" name="nim" class="form-control" placeholder="NIM" value="" required="" fdprocessedid="ffhs5">
+                            </div>
+                            <div class="mb-2">
+                                <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" value="" required="" fdprocessedid="ah8tcg">
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" name="email" class="form-control" placeholder="Email" value="" required="" fdprocessedid="5y2ugd">
+                            </div>
+                            <button type="submit" name="daftar" class="btn btn-primary w-100" fdprocessedid="5d6myq">Daftar Mahasiswa</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Menu Cepat -->
+                <div class="mt-3">
+                    <a href="http://localhost/krs/matkul.php" class="btn btn-outline-primary w-100 mb-2">Lihat Mata Kuliah</a>
+                    <a href="http://localhost/krs/dosen.php" class="btn btn-outline-success w-100">Lihat Dosen</a>
+                </div>
+            </div>
+            
+            <!-- Daftar Mahasiswa -->
+            <div class="col-md-8">
+                <!-- Pencarian -->
+                <form method="GET" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" name="cari" class="form-control" placeholder="Cari NIM atau nama mahasiswa..." value="" fdprocessedid="4bysv">
+                        <button type="submit" class="btn btn-outline-primary" fdprocessedid="kmxur6">Cari</button>
+                                            </div>
+                </form>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Data Mahasiswa (Total: 7)</h5>
+                        
+                                                    <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>NIM</th>
+                                            <th>Nama</th>
+                                            <th>Email</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                <tr>
+                                            <td><strong>2300018228</strong></td>
+                                            <td>Alfi Dias Saputra</td>
+                                            <td>2300018228@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018228" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>2300018221</strong></td>
+                                            <td>Anfaldi Fernanda</td>
+                                            <td>2300018221@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018221" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>230001899</strong></td>
+                                            <td>Anon</td>
+                                            <td>230001899@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=230001899" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>2300018209</strong></td>
+                                            <td>Aulia Hasna Fadhilah</td>
+                                            <td>2300018209@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018209" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>2300018299</strong></td>
+                                            <td>Febrina Sita Aulia</td>
+                                            <td>2300018299@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018299" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>2300018226</strong></td>
+                                            <td>Mohc Bian Eldizar</td>
+                                            <td>2300018226@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018226" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                                <tr>
+                                            <td><strong>2300018222</strong></td>
+                                            <td>Zaidan Ahmad</td>
+                                            <td>2300018222@webmail.uad.ac.id</td>
+                                            <td>
+                                                <a href="http://localhost/krs/krs.php?nim=2300018222" class="btn btn-sm btn-primary">Kelola KRS</a>
+                                            </td>
+                                        </tr>
+                                                                            </tbody>
+                                </table>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Sistem KRS_files/bootstrap.bundle.min.js.download"></script>
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
